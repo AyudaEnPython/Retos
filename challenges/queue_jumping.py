@@ -35,3 +35,41 @@ And as each price is printed out, remove that price update:
 "Silver(SI) 22.85, new_q=['NG,7.535']"
 "Nat Gas(NG) 7.535, new_q=[]"
 """
+
+table = {
+    "CL": "Crude",
+    "GC": "Gold",
+    "SI": "Silver",
+    "NG": "Nat Gas",
+}
+q = [
+    'CL,105.3',
+    'GC,1866.40',
+    'SI,22.85',
+    'CL,105.4',
+    'NG,7.525',
+    'CL,105.6',
+    'GC,1866.80',
+    'NG,7.535',
+]
+
+
+def update(q):
+    new_q = {}
+    for i in q:
+        commodity, price = i.split(',')
+        new_q[commodity] = price
+    return [f"{k},{v}" for k, v in new_q.items()]
+
+
+def show(q):
+    new_q = update(q)
+    len_ = len(new_q)
+    while len_ > 0:
+        commodity, price = new_q[0].split(',')
+        new_q.pop(0)
+        print(f"{table[commodity]}({commodity}) {price}, new_q={new_q}")
+        len_ -= 1
+
+
+show(q)
