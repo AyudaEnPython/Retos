@@ -26,6 +26,5 @@ def sol(arr):
     )
 
 
-if __name__ == "__main__":
-    print("Plots in descending order:")
-    print(sol(plots))
+print("Plots in descending order:")
+print(sol(plots))
