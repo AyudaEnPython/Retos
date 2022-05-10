@@ -15,7 +15,7 @@
 Repositorio de retos de la comunidad [Ayuda en Python](https://www.facebook.com/groups/ayudaenpython/).
 
 Conforme se vayan agregando más retos, la estructura del repositorio irá cambiando.
-> __*Nota*__: Algunas retos fueron movidos desde otro repositorio (revisar los enlaces).
+> __*Nota*__: Algunos retos fueron movidos desde otro repositorio (revisar los enlaces).
 
 ## Repositorios
 
