@@ -21,3 +21,6 @@ resultado del juego.
 |-------------------------------------|-------------------|
 |OPL<br>TDA<br>FINQSWDCVFOROQITVRZ    |DDDDDDPPPPDDMMMDDDD|
 |LPBJU<br>EZYHX<br>XPSVHVORFURKEIMGLCB|PDDDPPPPPDDDPPPPDDM|
+
+> __**NOTA**__: El enunciado original es inconsistente (color X? K?)
+> Las iniciales de las placas de los autos tendría más sentido.
