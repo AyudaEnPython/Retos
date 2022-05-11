@@ -8,7 +8,7 @@ from main import sol
 class Test(unittest.TestCase):
 
     cases = (
-        (  "OPL",   "TDA", "FINQSWDCVFOROQITVRZ", "DDDDDDPPPPDDMMMDDDD"),
+        ("OPL", "TDA", "FINQSWDCVFOROQITVRZ", "DDDDDDPPPPDDMMMDDDD"),
         ("LPBJU", "EZYHX", "XPSVHVORFURKEIMGLCB", "PDDDPPPPPDDDPPPPDDM"),
     )
 

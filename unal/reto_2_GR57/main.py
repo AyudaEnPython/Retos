@@ -15,9 +15,7 @@ def sol(a: str, b: str, s: str, d: str = DEFAULT) -> str:
 
 
 def main():
-    a = input()
-    b = input()
-    s = input()
+    a, b, s = input(), input(), input()
     print(sol(a, b, s))
 
 
