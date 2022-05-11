@@ -1,6 +1,5 @@
 """AyudaEnPython: https://www.facebook.com/groups/ayudapython
 """
-from typing import Tuple
 
 DEFAULT = "MPD"
 
