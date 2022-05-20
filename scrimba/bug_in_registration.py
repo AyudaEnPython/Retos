@@ -17,3 +17,15 @@ wrong_names = ['Yrret ,Maharg, Nhoj,Yrret, Leahcim ,Cire']
 # bonus:
 - Also save the names in a proper list variable.
 """
+
+wrong_names = ['Yrret ,Maharg, Nhoj,Yrret, Leahcim ,Cire']
+
+
+def fix_bug(names):
+    return [
+        name.strip().lower()[::-1].title()
+        for name in names[0].split(',')
+    ][::-1]
+
+
+print('Correct names are: ' + ', '.join(fix_bug(wrong_names)))
