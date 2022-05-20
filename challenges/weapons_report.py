@@ -3,6 +3,7 @@
 Even though the group is only for spanish speakers, english speakers are
 welcome.
 ------------------------------------------------------------------------------
+    ** PYTHON CODE CHALLENGE - COLLECT DATA **
 
 Write code to add up/report total number of weapons by type collected &
 destroyed by UN Weapons inspectors at 3 locations.

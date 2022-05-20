@@ -67,7 +67,7 @@ def sol_4(): # submitted code by Himel Sharma
 
 if __name__ == "__main__":
     data = sol_1()
-    # data = sol_2()
-    # data = sol_3()
-    # data = sol_4()
+    #data = sol_2()
+    #data = sol_3()
+    #data = sol_4()
     print(f"Artworks {', '.join(data)} can be shown to client")
