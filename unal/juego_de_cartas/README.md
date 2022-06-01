@@ -1,3 +1,5 @@
+# Enunciado Original
+
 Los estudiantes de la Universidad de Colombia se cansaron del juego de
 uno y decidieron inventarse un nuevo juego, este juego utiliza las 26
 letras del abecedario sin incluir la ñ y se puede seleccionar mayúsculas
@@ -23,8 +25,27 @@ escribirse en mayúscula y la segunda es la cantidad de repeticiones de esa
 carta antes de que haya encontrado una diferente, cada una de los resultados
 debe estar separado por espacio.
 
-|Entrada                     |Salida                                  |
-|----------------------------|----------------------------------------|
+|Entrada                      |Salida                                  |
+|-----------------------------|----------------------------------------|
 |z,z,Z,Z,i,a,z,Z,A,A,z,a,z,A,A|Z I A Z A Z A Z A <br> 4 1 1 2 2 1 1 1 2|
 
 > __**Nota**__: El enunciado original contiene errores ortográficos.
+
+# Variante
+
+Hugo, Paco y Luis siguen en el viaje por carretera con su tío Donaldo. Luis se
+acaba de despertar y Hugo y Paco deciden empezar un nuevo juego para incluir a
+Luis. Ahora van a contar el número de placas seguidas que tienen la primera letra
+igual. Cada vez que pasan los vehículos anotan las placas y luego cuentan la
+cantidad de cada una.
+
+Realizar un programa que reciba una lista con las primers letras de las placas
+vistas por Hugo (SEPARADAS POR UNA COMA CADA LETRA), Paco y Luis e imprima en una
+fila las letras que fueron viendo, separadas por un espacio, y en otra fila las
+veces seguidas que vieron dicha letra, separados por un espacio.
+
+Ejemplo
+
+|Entrada                        |Salida                                                  |
+|-------------------------------|--------------------------------------------------------|
+|A,A,a,c,g,c,B,A,F,f,b,f,E,b,f,b|A C G C B A F B F E B F B <br> 3 1 1 1 1 1 2 1 1 1 1 1 1|
