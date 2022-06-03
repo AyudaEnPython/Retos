@@ -25,7 +25,7 @@ def sol_2(d: Dict[str, float], s: str) -> Tuple[str, str]:
 def main(): 
     data, s = get_data()
     print("\n".join(sol_1(data, s)))
-    print("\n".join(sol_2(data, s)))
+    # print("\n".join(sol_2(data, s)))
 
 
 if __name__ == "__main__":
