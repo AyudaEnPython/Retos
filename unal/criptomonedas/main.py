@@ -8,18 +8,24 @@ def get_data() -> Tuple[Dict[str, int], str]:
     return json.loads(input()), input()
 
 
-def sol(d: Dict[str, float], s: str) -> Tuple[str, str]:
+def sol_1(d: Dict[str, float], s: str) -> Tuple[str, str]:
     r, t = "", 0
     for k, v in d.items():
         if k in s:
             r += k + " "
-            t += float(v)
-    return r, str(t)
+            t += v
+    return r[:-1], t
+
+
+def sol_2(d: Dict[str, float], s: str) -> Tuple[str, str]:
+    found = [c for c in s.split(" ") if c in d]
+    return " ".join(found), sum(d[c] for c in found)
 
 
 def main(): 
     data, s = get_data()
-    print("\n".join(sol(data, s)))
+    print("\n".join(sol_1(data, s)))
+    print("\n".join(sol_2(data, s)))
 
 
 if __name__ == "__main__":
