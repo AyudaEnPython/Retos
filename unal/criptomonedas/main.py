@@ -14,12 +14,12 @@ def sol_1(d: Dict[str, float], s: str) -> Tuple[str, str]:
         if k in s:
             r += k + " "
             t += v
-    return r[:-1], t
+    return r[:-1], str(t)
 
 
 def sol_2(d: Dict[str, float], s: str) -> Tuple[str, str]:
     found = [c for c in s.split(" ") if c in d]
-    return " ".join(found), sum(d[c] for c in found)
+    return " ".join(found), str(sum(d[c] for c in found))
 
 
 def main(): 

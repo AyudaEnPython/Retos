@@ -16,8 +16,9 @@ class Test(unittest.TestCase):
         "SOL LUNA APE ",
     )
     outputs = (
-        ("BTC SHIBA APE", 29035.03548),
-        ("SOL LUNA APE", 87),
+        ("BTC SHIBA APE", "29035.03548"),
+        ("SOL LUNA APE", "87"),
+        ("AYUDA EN PYTHON", "0"),
     )
 
     def test_sol(self):

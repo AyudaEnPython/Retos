@@ -32,3 +32,6 @@ posee el magnate
 | Entrada                                                                                                | Salida                     |
 |--------------------------------------------------------------------------------------------------------|----------------------------|
 |{"SOL": 50, "BTC": 29000, "DOT": 0.2, "SHIBA": 0.03548 , "LUNA": 2, "APE": 35}<br>BTC SHIBA BNB APE BUSD|BTC SHIBA APE<br>29035,03548|
+
+> __**NOTA**__: En caso de que no se ecunetre coincidencia debe
+> imprimir un espacio en blanco y en la siguiente línea 0.
