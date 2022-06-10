@@ -49,7 +49,7 @@ def get_data() -> Tuple[List[int], List[List[int]]]:
 
 def sol(r: List[int], m: List[List[int]]) -> Tuple[List[int], Dict[int, int]]:
     t = [i for i in r]
-    _d = {k:0 for k in range(len(t))}
+    _d = {k:0 for k in range(1, len(t)+1)}
     for i, s, d in m:
         n = _table(s, d)
         t[i-1] -= n

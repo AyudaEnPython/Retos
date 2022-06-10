@@ -4,7 +4,7 @@ import io
 import unittest
 from unittest.mock import patch
 
-from main import _table, sol, output, _percentage, min_max, get_data
+from main import _table, sol, output, _percentage, _min_max, get_data
 
 
 class Test(unittest.TestCase):
@@ -34,8 +34,8 @@ class Test(unittest.TestCase):
         "5 189\n3 973\n1 1.81%\n2 0.00%\n3 2.01%\n4 14.61%\n5 24.10%\n",
     )
     internal_ds = (
-        ([127, 233, 894], {0: 0, 1: 10, 2: 0, 3: 10}),
-        ([542, 561, 973, 263, 189], {0: 0, 1: 10, 2: 0, 3: 20, 4: 45, 5: 60}),
+        ([127, 233, 894], {1: 10, 2: 0, 3: 10}),
+        ([542, 561, 973, 263, 189], {1: 10, 2: 0, 3: 20, 4: 45, 5: 60}),
     )
     
     @patch("sys.stdout", new_callable=io.StringIO)
@@ -69,7 +69,7 @@ class Test(unittest.TestCase):
         self.assertEqual(_percentage(200, 100), 50.00)
 
     def test_min_max(self):
-        self.assertEqual(min_max([1, 2, 3, 4, 5]), ((0, 1), (4, 5)))
+        self.assertEqual(_min_max([1, 2, 3, 4, 5]), ((0, 1), (4, 5)))
 
     def test_sol(self):
         for i, n in enumerate(self.n_inputs):
