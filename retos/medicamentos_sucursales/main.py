@@ -54,14 +54,14 @@ def _percentage(x: int, y: int) -> float:
     return round(y * 100 / x, 2)
 
 
-def min_max(arr: List[int]) -> str:
+def _min_max(arr: List[int]) -> str:
     min_, max_ = min(arr), max(arr)
     i_min, i_max = arr.index(min_), arr.index(max_)
     return (i_min, min_), (i_max, max_)
 
 
 def output(r: List[int], t: List[int], m: Dict[int, int]) -> None:
-    print("\n".join(f"{i+1} {v}" for i, v in min_max(t)))
+    print("\n".join(f"{i+1} {v}" for i, v in _min_max(t)))
     for i in range(1, len(t)+1):
         print(f"{i} {_percentage(r[i-1], m[i]):.2f}%")
 
