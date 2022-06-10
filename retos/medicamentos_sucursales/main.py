@@ -16,6 +16,16 @@ def _table(x: int, y: int) -> int:
     }.get(True, 0)
 
 
+def _percentage(x: int, y: int) -> float:
+    return round(y * 100 / x, 2)
+
+
+def _min_max(arr: List[int]) -> str:
+    min_, max_ = min(arr), max(arr)
+    i_min, i_max = arr.index(min_), arr.index(max_)
+    return (i_min, min_), (i_max, max_)
+
+
 def get_data() -> Tuple[List[int], List[List[int]]]:
     data = []
     while True:
@@ -48,16 +58,6 @@ def sol(r: List[int], m: List[List[int]]) -> Tuple[List[int], Dict[int, int]]:
         else:
             _d[i] += n
     return t, _d
-
-
-def _percentage(x: int, y: int) -> float:
-    return round(y * 100 / x, 2)
-
-
-def _min_max(arr: List[int]) -> str:
-    min_, max_ = min(arr), max(arr)
-    i_min, i_max = arr.index(min_), arr.index(max_)
-    return (i_min, min_), (i_max, max_)
 
 
 def output(r: List[int], t: List[int], m: Dict[int, int]) -> None:
