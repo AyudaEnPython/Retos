@@ -16,6 +16,7 @@ productos: Dict[int, Data] =  {
     9: ['Chocolates', 3500.0, 80],
     10: ['Jamon', 15000.0, 10],
 }
+V: Dict[str, int] = {"nombre": 0, "precio": 1, "inventario": 2}
 
 
 def _actions(command: str) -> Callable:
@@ -61,10 +62,10 @@ def add(products: Dict[int, Data], data: Data) -> bool:
 
 
 def _statistics(products: Dict[int, Data]) -> Tuple[str, ...]:
-    max_ = max(products.values(), key=lambda x: x[1])[0]
-    min_ = min(products.values(), key=lambda x: x[1])[0]
-    mean_ = sum(x[1] for x in products.values()) / len(products)
-    value = sum(x[1]*x[2] for x in products.values())
+    max_ = max(products.values(), key=lambda x: x[V["precio"]])[V["nombre"]]
+    min_ = min(products.values(), key=lambda x: x[V["precio"]])[V["nombre"]]
+    mean_ = sum(x[V["precio"]] for x in products.values()) / len(products)
+    value = sum(x[V["precio"]]*x[V["inventario"]] for x in products.values())
     return max_, min_, f"{mean_:.1f}", f"{value:.1f}"
 
 
