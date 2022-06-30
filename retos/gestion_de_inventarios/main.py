@@ -44,7 +44,7 @@ def delete(products: Dict[int, Data], data: Data) -> bool:
     return False
 
 
-def update(products: Dict[int, Data],data: Data) -> bool:
+def update(products: Dict[int, Data], data: Data) -> bool:
     id_, *values = data
     if id_ in products:
         products[id_] = values
@@ -68,8 +68,8 @@ def _statistics(products: Dict[int, Data]) -> Tuple[str, ...]:
     return max_, min_, f"{mean_:.1f}", f"{value:.1f}"
 
 
-def output(data: Data):
-    print(" ".join(x for x in _statistics(data)))
+def output(products: Dict[int, Data]) -> None:
+    print(" ".join(x for x in _statistics(products)))
 
 
 def main():
