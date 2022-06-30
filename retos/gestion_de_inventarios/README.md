@@ -100,4 +100,3 @@ Es importante no utilizar ningún mensaje a la hora de capturar las entradas, es
 al utilizar la función input() no agregue ningún texto para capturar los datos.
 Los resultados se muestran en una única línea. Los dos valores requeridos deben estar
 separados por un espacio.
-
