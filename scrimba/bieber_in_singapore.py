@@ -33,7 +33,7 @@ So you get
 
 intercept = "1242263422322626121816404638362648184618341226364644"
 decoder = {
-    str(v*2):k for k, v in zip(
+    str(v*2): k for k, v in zip(
         "abcdefghijklmnopqrstuvwxyz", range(5, 32)
     )
 }

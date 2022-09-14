@@ -21,7 +21,7 @@ art = ['1ygb','2gbw','3ybg','4mbg','5bgy','6grb','7yrg','8grm','9owy']
 art = ["1ygb", "2gbw", "3ybg", "4mbg", "5bgy", "6grb", "7yrg", "8grm", "9owy"]
 
 
-def sol_1():   
+def sol_1():
     cs = "b", "y", "r"
     d = []
     for i in art:
@@ -38,8 +38,8 @@ def sol_2():
     return {i[0] for i in art if len(set(i[1:]) & {"b", "y", "r"}) < 2}
 
 
-def sol_3(): # submitted code by Udo Sero 
-    favorites = {'b','y','r'}
+def sol_3():  # submitted code by Udo Sero
+    favorites = {'b', 'y', 'r'}
     artsplits = {item[0]: set(item[1:]) for item in art}
     selections = [
         item[0] for item in artsplits.items()
@@ -48,8 +48,8 @@ def sol_3(): # submitted code by Udo Sero
     return selections
 
 
-def sol_4(): # submitted code by Himel Sharma
-    colors = ["b","y","r"]
+def sol_4():  # submitted code by Himel Sharma
+    colors = ["b", "y", "r"]
     chosen_ones = []
     for arts in art:
         chosen = False
@@ -67,7 +67,7 @@ def sol_4(): # submitted code by Himel Sharma
 
 if __name__ == "__main__":
     data = sol_1()
-    #data = sol_2()
-    #data = sol_3()
-    #data = sol_4()
+    # data = sol_2()
+    # data = sol_3()
+    # data = sol_4()
     print(f"Artworks {', '.join(data)} can be shown to client")
