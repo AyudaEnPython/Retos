@@ -1,0 +1,25 @@
+import turtle
+
+from main import do_commands
+
+turtle.bgcolor("red")
+t1 = turtle.Turtle()
+t1.speed(0)
+t1.color("green")
+t1.penup()
+t1.setposition(-95, -50)
+t1.pendown()
+t1.begin_fill()
+do_commands(t1, "*12L60F15R120F15L60")
+t1.left(120)
+do_commands(t1, "*12L60F15R120F15L60")
+t1.right(-120)
+do_commands(t1, "*12L60F15R120F15L60")
+do_commands(t1, "E0L120U0F90R90D0P10F90")
+t2 = turtle.Turtle()
+t2.penup()
+t2.setposition(-90, -100)
+t2.color("brown")
+do_commands(t2, "F25D0B0R85F100L85F100L85F100R85E0")
+turtle.screensize(900, 700)
+turtle.done()
