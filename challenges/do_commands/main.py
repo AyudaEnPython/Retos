@@ -1,6 +1,6 @@
-import re
 from turtle import Screen, Turtle, done
 
+from utils import parse
 
 def _parse(ss):
     return tuple(zip(
