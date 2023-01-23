@@ -1,12 +1,6 @@
 from turtle import Screen, Turtle, done
 
-from utils import parse
-
-def _parse(ss):
-    return tuple(zip(
-        tuple(s for s in ss if not s.isdigit()),
-        tuple(map(int, re.findall('-?\d+\.?\d*', ss))),
-    ))
+from utils import _parse
 
 
 def _action(t, s, x=None):
