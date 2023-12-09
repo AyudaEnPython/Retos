@@ -13,8 +13,8 @@ def _f(w: str, ow: str, g: Callable[[str, str], bool]) -> bool:
 
 def main():
     ws = ["".join([c for c in ws if c.isalpha()]) for ws in line.split()]
-    la = lr = ws[0]
-    for w in ws[1:]:
+    la = lr = ""
+    for w in ws:
         if _f(w, la, lambda x, y: x <= y):
             la = w
         if _f(w, lr, lambda x, y: x >= y):
