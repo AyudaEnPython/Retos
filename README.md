@@ -16,6 +16,10 @@ Repositorio de retos de la comunidad [Ayuda en Python](https://www.facebook.com/
 
 Conforme se vayan agregando más retos, la estructura del repositorio irá cambiando.
 
+> [!TIP]
+> Primero trata de resolver los retos sin ver la solución. Si llegas a estancarte en alguna parte,
+> puedes ver las soluciones y guiarte de ellas.
+
 > [!NOTE]
 > Algunos retos fueron movidos desde otro repositorio (revisar los enlaces).
 
